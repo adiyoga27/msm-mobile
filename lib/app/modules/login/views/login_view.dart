@@ -113,23 +113,19 @@ class LoginView extends GetView<LoginController> {
                 ],
               ),
               const SizedBox(
-                height: 30.0,
+                height: 5.0,
               ),
-              SizedBox(
-                height: 50.0,
-                width: Get.width,
-                child: ElevatedButton(
-                  onPressed: () => controller.onSubmit(),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xAA351A96),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12), // <-- Radius
-                    ),
+              ElevatedButton(
+                onPressed: () => controller.onSubmit(),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xAA351A96),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12), // <-- Radius
                   ),
-                  child: Text(
-                    'Login',
-                    style: GoogleFonts.manrope(color: Colors.white),
-                  ),
+                ),
+                child: Text(
+                  'Login',
+                  style: GoogleFonts.manrope(color: Colors.white),
                 ),
               )
             ],
